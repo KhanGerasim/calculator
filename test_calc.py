@@ -29,6 +29,11 @@ def test_division_success():
 def test_division_fail():
     cal = Calculator()
     assert cal.division(6, 3) == 5
+    
+    
+def test_division_fail_null():
+    cal = Calculator()
+    assert cal.division(0, 3) == 5
 
 
 def test_subtraction_success():
