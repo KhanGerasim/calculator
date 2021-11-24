@@ -8,7 +8,7 @@ def test_multiply_success():
 
 def test_multiply_fail():
     cal = Calculator()
-    assert cal.multiply(4, 3) == 9
+    assert cal.multiply(4, 3) != 9
 
 
 def test_adding_success():
@@ -18,7 +18,7 @@ def test_adding_success():
 
 def test_adding_fail():
     cal = Calculator()
-    assert cal.adding(4, 3) == 11
+    assert cal.adding(4, 3) != 11
 
 
 def test_division_success():
@@ -28,12 +28,12 @@ def test_division_success():
 
 def test_division_fail():
     cal = Calculator()
-    assert cal.division(6, 3) == 5
-    
-    
+    assert cal.division(6, 3) != 5
+
+
 def test_division_fail_null():
     cal = Calculator()
-    assert cal.division(0, 3) == 5
+    assert cal.division(0, 3) != 5
 
 
 def test_subtraction_success():
@@ -43,5 +43,4 @@ def test_subtraction_success():
 
 def test_subtraction_fail():
     cal = Calculator()
-    assert cal.subtraction(4, 3) == 2
-
+    assert cal.subtraction(4, 3) != 2
